@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Game Programmer Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="vievport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header hide" id="myHeader">
+        <img class="logo" src="1.png">
+        <div class="table">
+            <div class="menudiv">
+                <li type="none" class="menu"><b>CONTACTS</b></li>
+                <li type="none" class="menu"><b>RESUME</b></li>
+                <li type="none" class="menu"><b>PORTFOLIO</b></li>
+                <li type="none" class="menu"><b>PROLOGUE</b></li>
+            </div>
+        </div>
+    </div>
+
+    <img class="background" src="header-bg.jpg">
+
+    <div class="centered" align="center">
+        <h1>Neroslyk Maxum</h1>
+        <p>Game programmer<br>Unity 2D/3D developer</p>
+        <div class="portfoliobut">
+            <p><b>CHECK PORTFOLIO!</b></p>
+        </div>
+    </div>
+
+    <h3 align=center class="prologueheader">PROLOGUE</h3>
+    <p align=center class="prologuetext">Welcome to my portfolio website</p>
+    <div class="prologue">
+        <div class="cont">
+            <div class="circle"><img class="imgcont" src="skills.png">
+            </div>
+            <h3 class="cont-header"><br><b>Technical skills</b><br></h3>
+            <p class="content">Unity C#, .Net C#, C++, Java, Dart/Flutter, HTML/CSS/JS, Blender, SQL
+            </p>
+        </div>
+        <div class="cont">
+            <div class="circle"><img class="imgcont" src="education.png"></div>
+            <h3 class="cont-header"><br><b>Education</b><br></h3>
+
+            <p class="content">National Technical University of Ukraine “Igor Sikorsky Kyiv Polytechnic Institute”
+                September 2019 – now
+            </p>
+        </div>
+        <div class="cont">
+            <div class="circle"><img class="imgcont" src="hobies.png">
+            </div>
+            <h3 class="cont-header"><br><b>Hobies</b><br></h3>
+            <p class="content">Coding, Games, Music, Science, Reading
+            </p>
+        </div>
+    </div>
+
+    <div class="portfolio">
+
+    </div>
+</body>
+
+</html>
+
+<script>
+    window.onscroll = function () { myFunction() };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.remove("hide");
+        } else {
+            header.classList.add("hide");
+        }
+    }
+</script>
