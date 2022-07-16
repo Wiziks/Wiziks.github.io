@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="vievport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -80,7 +81,7 @@
         </div>
     </div>
 
-    <div class="left-plate">
+    <div class="left-plate" id="side-panel">
         <img class="myphoto" src="photo.jpg">
         <p class="resume-menu" align=center>ABOUT</p>
         <p class="resume-menu" align=center>EXPERIENCE</p>
@@ -125,6 +126,12 @@
         <div class="skills">
 
         </div>
+
+        <div class="certificates">
+            <h2>CERTIFICATES</h2>
+            <h3>Course "Basics of creating games on Unity"</h3>
+            <img class="" src="certificate.png">
+        </div>
     </div>
 
 </body>
@@ -134,14 +141,23 @@
 <script>
     window.onscroll = function () { myFunction() };
 
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
+    var header1 = document.getElementById("myHeader");
+    var sticky1 = header1.offsetTop;
+
+    var header2 = document.getElementById("side-panel");
+    var sticky2 = header2.offsetTop;
 
     function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.remove("hide");
+        if (window.pageYOffset > sticky1) {
+            header1.classList.remove("hide");
         } else {
-            header.classList.add("hide");
+            header1.classList.add("hide");
         }
+
+        // if (window.pageYOffset < sticky2) {
+        //     header2.classList.remove("fixed");
+        // } else {
+        //     header2.classList.add("fixed");
+        // }
     }
 </script>
