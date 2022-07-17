@@ -27,11 +27,15 @@ a {
 }
 
 .logo {
-	width: 3%;
+	width: 8%;
 	float: left;
 	padding-left: 10%;
-	padding-top: 0;
-	padding-bottom: 0;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+}
+
+.logo:hover {
+	filter: hue-rotate(10);
 }
 
 .table {
@@ -45,11 +49,15 @@ a {
 
 .menu {
 	font-size: 1rem;
-	padding-left: 1%;
-	padding-right: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
 	color: #ffffff;
 	font-family: Arial, Helvetica, sans-serif;
 	float: right;
+}
+
+.menu:hover {
+	color: #256b67;
 }
 
 .hide {
@@ -78,6 +86,10 @@ a {
 	font-size: 1.5rem;
 	padding-left: 3%;
 	padding-right: 3%;
+}
+
+.portfoliobut:hover {
+	background-color: #43cbc4;
 }
 
 .prologueheader {
@@ -210,20 +222,24 @@ a {
 	border: 5px solid #C4DFAA;
 	width: 50%;
 	margin-left: 25%;
-	margin-top: 25%;
+	margin-top: 45%;
 }
 
 .resume-menu {
 	margin-top: 25%;
 }
 
-.resume-menu a {
+.left-plate-link {
 	display: block;
 	color: #cadcb8;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 2rem;
 	text-align: center;
 	margin-top: 10%;
+}
+
+.left-plate-link:hover {
+	color: #ffffff;
 }
 
 .resume {
@@ -284,29 +300,31 @@ a {
 	margin-top: 3%;
 }
 
-.skill-cont {
-	padding: 0px;
-	font-size: 2rem;
-	max-width: 30%;
-	margin-right: 1%;
-	margin-left: 1%;
+.skill-container {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	width: 80%;
+	margin-top: 5%;
 }
 
 .skill-content {
-	text-align: center;
+	width: 20%;
+	margin-bottom: 5%;
+}
+
+.skill-container h3 {
 	font-family: Arial, Helvetica, sans-serif;
-	margin: 0;
 	text-align: center;
 	color: #2C3639;
 }
 
 .skill-circle {
 	border-radius: 50%;
-	background-color: #39AEA9;
-	width: 20%;
-	margin-left: 40%;
+	background-color: #6c8189;
+	width: 30%;
+	margin-left: 35%;
 }
 
 .skill-imgcont {
@@ -314,4 +332,9 @@ a {
 	top: 50%;
 	left: 50%;
 	transform: translate(5%, 5%);
+	margin-bottom: 0;
+}
+
+.skill-circle:hover {
+	background-color: #39AEA9;
 }

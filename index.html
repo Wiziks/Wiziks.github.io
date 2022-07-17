@@ -10,14 +10,10 @@
 </head>
 
 <body>
-
     <div class="header hide" id="myHeader">
-        <img class="logo" src="1.png">
+        <a href="#top"><img class="logo" src="name.png"></a>
         <div class="table">
             <div class="menudiv">
-                <a href="#contacts">
-                    <li type="none" class="menu"><b>CONTACTS</b></li>
-                </a>
                 <a href="#resume">
                     <li type="none" class="menu"><b>RESUME</b></li>
                 </a>
@@ -30,8 +26,7 @@
             </div>
         </div>
     </div>
-
-    <img class="background" src="header-bg.jpg">
+    <a name="top"><img class="background" src="header-bg.jpg"></a>
 
     <div class="centered" align="center">
         <h1>NEROSLYK MAXUM</h1>
@@ -43,9 +38,11 @@
         </a>
     </div>
 
+    <a name="prologue"></a>
     <h3 align=center class="prologueheader">PROLOGUE</h3>
     <p align=center class="prologuetext"><i>Welcome to my portfolio website</i></p>
-    <div class="prologue"><a name="prologue"></a>
+
+    <div class="prologue">
         <div class="cont">
             <div class="circle"><img class="imgcont" src="skills.png">
             </div>
@@ -95,21 +92,21 @@
 
         </div>
         <a name="about"></a>
+        <a name="resume"></a>
     </div>
 
     <div class="left-plate" id="side-panel">
         <img class="myphoto" src="photo.jpg">
         <div class="resume-menu">
-            <a href="#about">ABOUT</a>
-            <a href="#experience">EXPERIENCE</a>
-            <a href="#education">EDUCATION</a>
-            <a href="#skills">SKILLS</a>
-            <a href="#sertificates">CERTIFICATES</a>
-            <a href="#contacts">CONTACTS</a>
+            <a href="#about" class="left-plate-link">ABOUT</a>
+            <a href="#experience" class="left-plate-link">EXPERIENCE</a>
+            <a href="#education" class="left-plate-link">EDUCATION</a>
+            <a href="#skills" class="left-plate-link">SKILLS</a>
+            <a href="#sertificates" class="left-plate-link">CERTIFICATES</a>
         </div>
     </div>
 
-    <div class="resume"><a name="resume"></a>
+    <div class="resume">
         <div class="about">
             <h1>NEROSLYK MAXUM</h1>
             <h4>UNITY DEVELOPER&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp·&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -158,12 +155,59 @@
 
         <div class="skills">
             <h2>SKILLS</h2>
-            <div class="skill-cont">
-                <div class="skill-circle"><img class="skill-imgcont" src="hobies.png">
+            <div class="skill-container">
+                <div class="skill-content">
+                    <div class="skill-circle"><img class="skill-imgcont" src="unity.png">
+                    </div>
+                    <h3><br><b>UNITY</b><br></h3>
                 </div>
-                <h3 class="skill-content"><br><b>Hobies</b><br></h3>
+                <div class="skill-content">
+                    <div class="skill-circle"><img class="skill-imgcont" src="csharp.png">
+                    </div>
+                    <h3><br><b>C#</b><br></h3>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-circle"><img class="skill-imgcont" src="c++.png">
+                    </div>
+                    <h3><br><b>C++</b><br></h3>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-circle"><img class="skill-imgcont" src="java.png">
+                    </div>
+                    <h3><br><b>JAVA</b><br></h3>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-circle"><img class="skill-imgcont" src="flutter.png">
+                    </div>
+                    <h3><br><b>DART&FLUTTER</b><br></h3>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-circle"><img class="skill-imgcont" src="html.png">
+                    </div>
+                    <h3><br><b>HTML</b><br></h3>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-circle"><img class="skill-imgcont" src="css.png">
+                    </div>
+                    <h3><br><b>CSS</b><br></h3>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-circle"><img class="skill-imgcont" src="js.png">
+                    </div>
+                    <h3><br><b>JAVASCRIPT</b><br></h3>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-circle"><img class="skill-imgcont" src="blender.png">
+                    </div>
+                    <h3><br><b>BLENDER</b><br></h3>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-circle"><img class="skill-imgcont" src="sql.png">
+                    </div>
+                    <h3><br><b>SQL</b><br></h3>
+                </div>
+                <a name="certificates"></a>
             </div>
-            <a name="certificates"></a>
         </div>
 
         <hr noshade color="#f2f2f2">
@@ -175,9 +219,6 @@
                 <h3>Course "Basics of creating games on Unity"</h3>
             </div>
         </div>
-
-        <hr noshade color="#f2f2f2">
-
     </div>
 </body>
 
@@ -208,7 +249,5 @@
             header2.classList.remove("fixed");
             isFixed = false;
         }
-
-        console.log(header2.getBoundingClientRect().y + " " + header1.offsetHeight)
     }
 </script>
