@@ -117,7 +117,7 @@ a {
 .cont {
 	padding: 0px;
 	font-size: 2rem;
-	max-width: 30%;
+	width: 30%;
 	margin-right: 1%;
 	margin-left: 1%;
 	display: flex;
@@ -193,7 +193,7 @@ a {
 .game-card {
 	padding: 0;
 	font-size: 2rem;
-	max-width: 30%;
+	width: 30%;
 	margin-right: 1%;
 	margin-left: 1%;
 	margin-bottom: 1%;
@@ -341,4 +341,90 @@ a {
 
 .skill-circle:hover {
 	background-color: #39AEA9;
+}
+
+@media screen and (max-width: 1200px) {
+	.left-plate-link {
+		font-size: 1.8rem;
+	}
+
+	.myphoto {
+		margin-top: 75%;
+	}
+}
+
+@media screen and (max-width: 1110px) {
+	.portfoliobut {
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.portfolio-layuot-group {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.game-card {
+		width: 45%;
+	}
+
+	.myphoto {
+		margin-top: 75%;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.left-plate-link {
+		font-size: 1.6rem;
+	}
+
+	.prologue {
+		align-items: center;
+	}
+
+	.cont {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 930px) {
+	.left-plate-link {
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.portfoliobut {
+		font-size: 1rem;
+	}
+
+	.game-card {
+		width: 60%;
+	}
+
+	.myphoto {
+		margin-top: 100%;
+	}
+
+	.cont {
+		font-size: 1.5rem;
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.left-plate {
+		display: none;
+	}
+
+	.resume {
+		margin-left: 5%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.header {
+		display: none;
+	}
 }
