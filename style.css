@@ -386,6 +386,24 @@ a {
 	.cont {
 		width: 50%;
 	}
+
+	.left-plate {
+		display: none;
+	}
+
+	.resume {
+		margin-left: 5%;
+	}
+
+	.header {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.resume h4 {
+		font-size: 0.75rem;
+	}
 }
 
 @media screen and (max-width: 930px) {
@@ -410,21 +428,5 @@ a {
 	.cont {
 		font-size: 1.5rem;
 		width: 75%;
-	}
-}
-
-@media screen and (max-width: 800px) {
-	.left-plate {
-		display: none;
-	}
-
-	.resume {
-		margin-left: 5%;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	.header {
-		display: none;
 	}
 }
