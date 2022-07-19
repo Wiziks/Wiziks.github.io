@@ -31,7 +31,7 @@ h1 {
 iframe {
     margin-top: 3%;
     width: 50vw;
-    height: 60vh;
+    height: 30vw;
 }
 
 .h3 {
@@ -195,6 +195,8 @@ iframe {
 
 .center {
     font-size: 2rem;
-    position: absolute;
-    right: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }
