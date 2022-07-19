@@ -13,6 +13,14 @@ a {
     text-decoration: none;
 }
 
+.cross {
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    color: #6c8189;
+    font-size: 5rem;
+}
+
 h1 {
     padding-top: 3%;
     color: #2C3639;
