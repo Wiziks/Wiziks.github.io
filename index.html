@@ -4,8 +4,9 @@
 <head>
     <title>Game Programmer Portfolio</title>
     <meta charset="utf-8">
-    <meta name="vievport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-style.css">
 </head>
 
 <body>
@@ -70,7 +71,8 @@
         <h3 align=center class="portfolioheader">PORTFOLIO</h3>
         <p align=center class="portfoliotext"><i>Personal projects that I developed from scratch</i></p>
         <div class="portfolio-layuot-group">
-            <a href="animal-rabies.html" class="game-card">
+            <a class="game-card" id="openDialog">
+                <!-- href="animal-rabies.html" -->
                 <img class="game-image" src="animal rabies.png">
                 <h3 class="cont-header"><br><b>Animal Rabies</b><br></h3>
                 <p class="content">Platform: Windows<br>Genre: shoot'em up
@@ -89,6 +91,146 @@
                 </p>
             </a>
         </div>
+        <dialog>
+            <a href="index.html" class="cross" id="closeDialog">✘</a>
+
+            <h1>ANIMAL RABIES</h1>
+
+            <p class="h3"><i>Windows shoot'em up game</i></p>
+
+            <iframe src="https://www.youtube.com/embed/2iSuOavNpXs" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <div class="photoviewport">
+                <div class="itcss">
+                    <div class="itcss__wrapper">
+                        <div class="itcss__items">
+                            <div class="itcss__item">
+                                <img style="width:100%;" src="animal rabies/1.png">
+                            </div>
+                            <div class="itcss__item">
+                                <img style="width:100%;" src="animal rabies/2.png">
+                            </div>
+                            <div class="itcss__item">
+                                <img style="width:100%;" src="animal rabies/3.png">
+                            </div>
+                            <div class="itcss__item">
+                                <img style="width:100%;" src="animal rabies/4.png">
+                            </div>
+                            <div class="itcss__item">
+                                <img style="width:100%;" src="animal rabies/5.png">
+                            </div>
+                            <div class="itcss__item">
+                                <img style="width:100%;" src="animal rabies/6.png">
+                            </div>
+                            <div class="itcss__item">
+                                <img style="width:100%;" src="animal rabies/7.png">
+                            </div>
+                            <div class="itcss__item">
+                                <img style="width:100%;" src="animal rabies/8.png">
+                            </div>
+                            <div class="itcss__item">
+                                <img style="width:100%;" src="animal rabies/9.png">
+                            </div>
+                            <div class="itcss__item">
+                                <img style="width:100%;" src="animal rabies/10.png">
+                            </div>
+                            <div class="itcss__item">
+                                <img style="width:100%;" src="animal rabies/11.png">
+                            </div>
+                        </div>
+                    </div>
+                    <a class="itcss__control itcss__control_prev" href="#" role="button" data-slide="prev"></a>
+                    <a class="itcss__control itcss__control_next" href="#" role="button" data-slide="next"></a>
+                </div>
+            </div>
+
+            <p class="content">&nbsp&nbsp&nbsp&nbspAnimal Rabies is a side-view shooter. The main character needs to
+                destroy all
+                the animals that
+                have gone mad in the
+                city. The game features several types of animals with different abilities and behavior patterns:
+                <br><br>&nbsp&nbsp&nbsp&nbsp– The pig can only walk between given points. When colliding with it, the
+                player
+                receives damage. This unit
+                can
+                move not
+                only on a flat plane. A beam is fired from the pig that determines the nearest plane to move. Thanks to
+                raycast,
+                the
+                unit "sticks" to the surface.
+                <br>&nbsp&nbsp&nbsp&nbsp– The squirrel stands still and occasionally shoots acorns in three different
+                directions
+                (up, left, right).
+                When
+                colliding with a squirrel or acorn, the player receives damage.
+                <br>&nbsp&nbsp&nbsp&nbsp– The chicken flies the shortest way to the player. When shot at it, thanks to
+                the
+                joint, the unit seems to
+                oscillate
+                from the impact. When colliding with it, the player receives damage.
+                <br>&nbsp&nbsp&nbsp&nbsp– The hare stands still and shoots a carrot at the player's last position. In
+                case of a
+                collision with a
+                hare
+                or
+                a
+                carrot, the player receives damage.
+                <br>&nbsp&nbsp&nbsp&nbsp– The bear hovers in the air and shoots missiles at the player that chase the
+                player
+                until they detonate.
+                Rockets
+                detonate upon collision with any object. When colliding with a bear or missiles, the player takes
+                damage.
+                <br><br>&nbsp&nbsp&nbsp&nbspDuring the jump, the player does somersaults, knows how to bend. Several
+                different
+                mechanics are available
+                in
+                the game:
+                <br><br>&nbsp&nbsp&nbsp&nbsp– There are two weapons for shooting in the game: one initial, and the other
+                bonus.
+                The
+                first has an
+                infinite
+                number of
+                bullets and a low rate of fire. The second is selected from bonuses and has a finite supply of bullets
+                and a
+                high rate of fire.
+                When
+                they are
+                finished, the weapon disappears.
+                <br>&nbsp&nbsp&nbsp&nbsp– Rocketjump is available as an active skill. When pressing the appropriate
+                button, the
+                player fires a
+                weapon
+                and flies
+                in the opposite direction. After that, the skill becomes unavailable for a few seconds.
+                <br>&nbsp&nbsp&nbsp&nbsp– Time is slowed down by pressing the appropriate button. It applies to
+                everything
+                except skill reloads and
+                weapon rate
+                of fire.
+                <br>&nbsp&nbsp&nbsp&nbsp– The player can release a grappling hook to grab onto a surface or enemy. The
+                hook is
+                the same length as
+                it
+                was
+                from
+                the beginning, when it caught on something.
+                <br>&nbsp&nbsp&nbsp&nbsp– When picking up the "HP" bonus, the player adds one life.
+            </p>
+
+            <a href="https://github.com/Wiziks/animal-rabies.git" class="button center">
+                <p><b>Look at GitHub</b></p>
+            </a>
+            <a href="put-in.html" class="button prev">
+                <p><b>←</b></p>
+            </a>
+            <a href="dunk-shot.html" class="button next">
+                <p><b>→</b></p>
+            </a>
+        </dialog>
         <a name="about"></a>
         <a name="resume"></a>
     </div>
@@ -106,6 +248,9 @@
 
     <div class="resume">
         <div class="about">
+            <a class="download" href="Unity Resume.pdf" download="Unity Resume.pdf">
+                <img src="download.png">
+            </a>
             <h1>NEROSLYK MAXUM</h1>
             <h4>UNITY DEVELOPER&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp·&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                 +38 (066) 703-39-16&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp·&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -262,5 +407,13 @@
             header2.classList.remove("fixed");
             isFixed = false;
         }
+    }
+
+    var dialog = document.querySelector('dialog');
+    document.querySelector('#openDialog').onclick = function () {
+        dialog.show();
+    }
+    document.querySelector('#closeDialog').onclick = function () {
+        dialog.close();
     }
 </script>
